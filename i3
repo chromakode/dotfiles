@@ -162,8 +162,6 @@ workspace 1 output eDP1
 assign [class="Gvim"] 2
 workspace 2 output DP1
 
-workspace_auto_back_and_forth yes
-
 bindsym $mod+Shift+Left workspace prev_on_output
 bindsym $mod+Shift+Right workspace next_on_output
 bindsym $mod+Shift+Down workspace back_and_forth
