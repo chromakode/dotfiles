@@ -145,7 +145,7 @@ bindsym XF86AudioMute exec "pactl set-sink-mute $sink toggle; killall -USR1 i3st
 
 bindsym Print exec xset dpms force off && gnome-screensaver-command -l
 
-bindsym Mod1+Print exec gnome-screenshot -a -c
+bindsym Mod1+Print exec gnome-screenshot -i
 
 bindsym $mod+grave exec xrandr --output DP1 --above eDP1 --off && xrandr --output DP1 --above eDP1 --auto
 
