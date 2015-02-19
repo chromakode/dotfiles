@@ -21,7 +21,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Shift+x kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -fn 'Droid Sans Mono-12'
@@ -64,9 +64,9 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Ctrl+s layout stacking
+bindsym $mod+Ctrl+w layout tabbed
+bindsym $mod+Ctrl+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -91,6 +91,10 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+q workspace q
+bindsym $mod+w workspace w
+bindsym $mod+e workspace e
+bindsym $mod+r workspace r
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -103,6 +107,10 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+q move container to workspace q
+bindsym $mod+Shift+w move container to workspace w
+bindsym $mod+Shift+e move container to workspace e
+bindsym $mod+Shift+r move container to workspace r
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -129,7 +137,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+Ctrl+r mode "resize"
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
