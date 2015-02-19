@@ -153,8 +153,15 @@ workspace 1 output eDP1
 assign [class="Gvim"] 2
 workspace 2 output DP1
 
-bindsym Mod1+Ctrl+Left workspace prev_on_output
-bindsym Mod1+Ctrl+Right workspace next_on_output
+workspace_auto_back_and_forth yes
+
+bindsym $mod+Shift+Left workspace prev_on_output
+bindsym $mod+Shift+Right workspace next_on_output
+bindsym $mod+Shift+Down workspace back_and_forth
+bindsym $mod+Shift+h workspace prev_on_output
+bindsym $mod+Shift+l workspace next_on_output
+bindsym $mod+Shift+j workspace back_and_forth
+bindsym Mod1+Tab workspace back_and_forth
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
