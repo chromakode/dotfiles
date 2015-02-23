@@ -170,6 +170,8 @@ bindsym $mod+Shift+l workspace next_on_output
 bindsym $mod+Shift+j workspace back_and_forth
 bindsym Mod1+Tab workspace back_and_forth
 
+bindsym Control+Shift+q exec :
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
