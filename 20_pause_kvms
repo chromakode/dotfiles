@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# KVMs seem to sometimes hang on suspend if left running.
+# for /etc/pm/sleep.d/
+
+case "$1" in
+    suspend)
+        virsh list --uuid --state-running | xargs -L 1 virsh suspend
+        ;;
+esac
