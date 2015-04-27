@@ -149,7 +149,7 @@ bindsym Shift+XF86MonBrightnessDown exec xbacklight -dec 1
 # Pulse Audio controls
 set $sink `pactl list short sinks | grep RUNNING | cut -f1`
 bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume $sink +1%; killall -USR1 i3status"
-bindsym XF86AudioLowerVolume exec "pactl set-sink-volume $sink -- -1%; killall -USR1 i3status"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-volume $sink -1%; killall -USR1 i3status"
 bindsym XF86AudioMute exec "pactl set-sink-mute $sink toggle; killall -USR1 i3status"
 
 bindsym Print exec xset dpms force off && gnome-screensaver-command -l
